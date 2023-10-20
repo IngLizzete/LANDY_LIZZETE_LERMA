@@ -54,7 +54,7 @@
                 <img src="img/LANDY_859.png" alt="">
             </div>
             <h1>LANDY LERMA</h1>
-            <h2>Ingeniera Industrial - Especialista en Inteligencia Artificial - Creadora del concepto EmoAI</h2>
+            <h2>Ingeníera Industrial - Especialista en Inteligencia Artificial - Creadora del concepto EmoAI</h2>
             <div class="redes">
                 <a href="https://www.facebook.com/profile.php?id=100068691562138&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="http://tiktok.com/@emoaitech"><i class="fa-brands fa-tiktok"></i></a>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <a id="downloadButton" href="docs/CV_English_04_10_2023.pdf">
+            <a id="downloadButton" href="docs/CV_English_04_10_2023.pdf" download>
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </a>
@@ -412,17 +412,22 @@
         <h2>CONTACTO</h2>
         <div class="fila">
             <!-- Formulario -->
-            <div class="col">
-                <input type="text" placeholder="Tú Nombre">
-                <input type="text" placeholder="Número telefónico">
-                <input type="text" placeholder="Dirección de correo">
-                <input type="text" placeholder="Tema">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button>
-                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                    <span class="overlay"></span>
-                </button>
-            </div>
+             <form class="contact-form" name="contact" netlify>
+          <div class="contact-form-group">
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name" />
+          </div>
+          <div class="contact-form-group">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" />
+          </div>
+          <div class="contact-form-group">
+            <label for="message">Mensaje</label>
+            <textarea required name="message" id="message" rows="6"></textarea>
+          </div>
+
+          <button type="submit" class="contact-form-submit">Enviar</button>
+        </form>
             <!-- Mapa -->
             <div class="col">
                 <img src="img/ubicacion.jpg" alt="">

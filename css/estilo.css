@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 *{
     box-sizing: border-box;
@@ -601,93 +602,105 @@ html{
 }
 
 
-/* SECCION CONTACTO */
+/* Estilos para la sección de contacto */
 .contacto {
-    background-image: url(img/world-140304_1280.jpg);
-    background-color: #1e2326;
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-size: cover; /* Ajusta la imagen al tamaño del elemento */
-    background-position: center center; /* Centra la imagen */
+    background-image: url("img/"); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 50px 0;
-}
-.contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.contacto h2{
-    font-size: 48px;
-    font-family: 'Righteous';
     text-align: center;
-    padding: 20px 0;
 }
-.contacto .fila{
-    display: flex;
-}
-.contacto .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
-}
-.contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
-    font-size: 18px;
-}
-.contacto button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #FF1493;
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
-    width: 100%;
-}
-.contacto .col img{
-    width: 100%;
-}
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 20px;
-    max-swidth: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
-.contacto .col .info ul{
-    list-style: none;
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a tu preferencia */
 }
-.contacto .col .info ul li{
+
+.contacto .fila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    flex: 1;
+    text-align: left;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.contact-form-group {
     margin-bottom: 20px;
 }
-.contacto .col .info ul li i{
-    color: #FF1493;
-    display: inline-block;
-    margin-right: 20px;
+
+.contact-form-group label {
+    display: block;
+    font-weight: bold;
 }
+
+.contact-form-group input[type="text"],
+.contact-form-group input[type="email"],
+.contact-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form-submit {
+    background-color: #FF1493; /* Cambia el color de fondo a tu preferencia */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para la columna del mapa e información */
+.col {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.col img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    background-color: #252A2E; /* Cambia el color de fondo a tu preferencia */
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info ul li {
+    margin-bottom: 10px;
+}
+
+.info ul li i {
+    color: #FF1493; /* Cambia el color de los íconos a tu preferencia */
+    margin-right: 10px;
+}
+
+
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -758,9 +771,9 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
     }
-
-  
-
+    .sobremi .fila .col:nth-child(2){
+        margin: auto;
+    }   
 }
 
 
