@@ -604,7 +604,7 @@ html{
 
 /* Estilos para la sección de contacto */
 .contacto {
-    background-image: url("img/"); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-image: url("img/ubu"); /* Reemplaza con la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -632,74 +632,80 @@ html{
     flex-wrap: wrap;
 }
 
-/* Estilos para el formulario de contacto */
-.contact-form {
-    flex: 1;
+/* Estilos para el formulario */
+form {
     text-align: left;
     max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
-}
-
-.contact-form-group {
-    margin-bottom: 20px;
-}
-
-.contact-form-group label {
+  }
+  
+  label {
     display: block;
     font-weight: bold;
-}
-
-.contact-form-group input[type="text"],
-.contact-form-group input[type="email"],
-.contact-form-group textarea {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.contact-form-submit {
-    background-color: #FF1493; /* Cambia el color de fondo a tu preferencia */
+    margin-bottom: 10px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #FF1493;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-}
-
-/* Estilos para la columna del mapa e información */
-.col {
+  }
+  
+  /* Estilos para la columna del mapa e información */
+  .col {
     flex: 1;
     text-align: center;
     padding: 20px;
-}
-
-.col img {
+  }
+  
+  .col img {
     max-width: 100%;
     height: auto;
-}
-
-.info {
-    background-color: #252A2E; /* Cambia el color de fondo a tu preferencia */
+  }
+  
+  .info {
+    background-color: #252A2E;
     padding: 20px;
     border-radius: 4px;
     text-align: center;
-}
-
-.info ul {
+  }
+  
+  .info ul {
     list-style: none;
     padding: 0;
-}
-
-.info ul li {
+  }
+  
+  .info ul li {
     margin-bottom: 10px;
-}
-
-.info ul li i {
-    color: #FF1493; /* Cambia el color de los íconos a tu preferencia */
+  }
+  
+  .info ul li i {
+    color: #FF1493;
     margin-right: 10px;
-}
-
+  }
+  
 
 footer{
     background-color: #252A2E;

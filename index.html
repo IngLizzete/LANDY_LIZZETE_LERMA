@@ -413,22 +413,26 @@
         <h2>CONTACTO</h2>
         <div class="fila">
             <!-- Formulario -->
-             <form class="contact-form" name="contact" netlify>
-          <div class="contact-form-group">
-            <label for="name">Nombre</label>
-            <input required type="text" name="name" id="name" />
-          </div>
-          <div class="contact-form-group">
-            <label for="email">Email</label>
-            <input required type="email" name="email" id="email" />
-          </div>
-          <div class="contact-form-group">
-            <label for="message">Mensaje</label>
-            <textarea required name="message" id="message" rows="6"></textarea>
-          </div>
-
-          <button type="submit" class="contact-form-submit">Enviar</button>
-        </form>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label>Your Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                  </select></label>
+                </p>
+                <p>
+                  <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
             <!-- Mapa -->
             <div class="col">
                 <img src="img/ubicacion.jpg" alt="">
